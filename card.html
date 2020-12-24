@@ -16,7 +16,8 @@
                 <div id="savebox" class="savebox">
                     <div class="box">
                         <div id='View_area' class="back" ></div>
-                        <img id="img2" class="front" src="static/img/tmp/basic1.png" >
+                        <img id="img1" class="front" src="static/img/tmp/red.png" >
+                        <img id="img2" class="front" src="static/img/deco/deco.png" >
                     </div>
                     <br><div class="txt" id='result'></div>
                     <canvas id="bar2"></canvas> 
@@ -31,21 +32,25 @@
                 <span class="type">스타일&nbsp&nbsp</span>
                 <button class="redbtn" onclick="toggleImg1()"></button>
                 <button class="greenbtn" onclick="toggleImg2()"></button>
-                <button class="yellowbtn" onclick="toggleImg2()"></button>
-                <button class="blackbtn" onclick="toggleImg2()"></button>
+                <button class="yellowbtn" onclick="toggleImg3()"></button>
+                <button class="blackbtn" onclick="toggleImg4()"></button>
                 <br><br>
                 <span class="type">스티커&nbsp&nbsp</span>
-                <button class="onbtn" onclick="toggleImg1()">ON</button>
-                <button class="offbtn" onclick="toggleImg1()">OFF</button>
+                <button class="onbtn" onclick="imgon()">ON</button>
+                <button class="offbtn" onclick="imgoff()">OFF</button>
                 <br>
                 <br><input class="txtinput" value="텍스트를 입력하세요" id='name' onclick="this.value='';" onkeyup='printName()'/>    
             </div>
             <br>
             <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#savebox'));">이미지로 저장</a></div>
 
-            <div class="linkcopy">링크 복사</div>
-            <br><br><br>
+        <a class="clipboardBtn" href="" onclick=""><p class="copytxt">링크 복사</p></a>
+        <input id="clip_target" type="text" value="" style="position:absolute;top:-9999em;"/>
+            <br><br>
         </div>
+        <p class="dev">dev | 임도연 임수민</p>
+        <p class="dev">Copyright© 2020.LL.All rights reserved</p>
+        <br><br>
     </div>
 
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>

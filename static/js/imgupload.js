@@ -86,8 +86,37 @@ function printName()  {
 }
 
 function toggleImg1() {
-	document.getElementById("img2").src = "../static/img/tmp/tmp1.png";
+	document.getElementById("img1").src = "../static/img/tmp/red.png";
 }
 function toggleImg2() {
-	document.getElementById("img2").src = "../static/img/sample2.jpg";
+	document.getElementById("img1").src = "../static/img/tmp/green.png";
 }
+function toggleImg3() {
+	document.getElementById("img1").src = "../static/img/tmp/yellow.png";
+}
+function toggleImg4() {
+	document.getElementById("img1").src = "../static/img/tmp/black.png";
+}
+function imgon() {
+	document.getElementById("img2").src = "../static/img/deco/deco.png";
+}
+function imgoff() {
+	document.getElementById("img2").src = "../static/img/blank.png";
+}
+
+$(document).ready(function () {
+    $('.clipboardBtn').on('click', function(e) { 
+
+        var text = 'https://polggu.github.io';
+        $('#clip_target').val(text);
+        $('#clip_target').select();
+        // Use try & catch for unsupported browser 
+        try { 
+            // The important part (copy selected text) 
+            var successful = document.execCommand('copy');
+            // if(successful) answer.innerHTML = 'Copied!'; 
+            // else answer.innerHTML = 'Unable to copy!';
+        } catch (err) { alert('이 브라우저는 지원하지 않습니다.') }
+
+    });
+});
