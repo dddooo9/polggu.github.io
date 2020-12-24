@@ -4,6 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
+@import
+url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 .body{
     background-color: rgb(38,38,38);
 }
@@ -47,9 +50,28 @@
     top:340px;
 }
 
-
+.banner{
+    font-family: 'BMJUA';
+    color:white;
+    background-color: rgb(165,51,49);
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    line-height: 50px;
+}
+.polarea{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    width: 260px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+}
 .cardpage{
-    margin-top: 10%;
+    margin-top: 5%;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -57,16 +79,16 @@
     position: relative;
 }
 .front{
-    width: 140px;
-    height: 220px;
+    width: 260px;
+    height: 410px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
 }
 .back{
     position: absolute;
-    width: 140px;
-    height: 220px;
+    width: 260px;
+    height: 410px;
     color: black;
     margin-left: auto;
     margin-right: auto;
@@ -80,32 +102,42 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    width: 140px;
-    height: 210px;
+    width: 260px;
+    height: 410px;
+}
+.btnarea{
+    padding-top: 16px;
+    background-color: white;
+    width: 260px;
+    height: 170px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.filebox{
+    text-align: center;
 }
 .filebox label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     display: inline-block;
     padding: .5em .75em;
     color: #fff;
     font-size: inherit;
     line-height: normal;
     vertical-align: middle;
-    background-color: #5cb85c;
+    background-color: rgb(165,51,49);
     cursor: pointer;
-    border: 1px solid #4cae4c;
+    border: 1px solid rgb(165,51,49);
     border-radius: .25em;
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
+    width: 250px;
+    letter-spacing: -2px;
 }
   
-.filebox label:hover {
-    background-color: #6ed36e;
-}
-  
-.filebox label:active {
-    background-color: #367c36;
-}
-  
+
 .filebox input[type="file"] {
     position: absolute;
     width: 1px;
@@ -115,4 +147,101 @@
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.redbtn{
+    background-color: rgb(165,51,49);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.greenbtn{
+    background-color: rgb(37,121,76);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.yellowbtn{
+    background-color: rgb(253,244,165);
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.blackbtn{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.type{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -2px;
+}
+.onbtn{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: rgb(165,51,49);
+    border: none;
+    width: 60px;
+    border-radius: 8px;
+    color: white;
+}
+.offbtn{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: rgb(37,121,76);
+    border: none;
+    width: 60px;
+    border-radius: 8px;
+    color: white;
+}
+.txtinput{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(242,242,242);
+    color: gray;
+    border: none;
+    text-align: center;
+}
+.save_btn{
+    background-color: rgb(165,51,49);
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+.hover{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    letter-spacing: -2px;
+}
+.linkcopy{
+    margin-top: 10px;
+    background-color: rgb(165,51,49);
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
 }

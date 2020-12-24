@@ -40,8 +40,8 @@ function previewImage(targetObj, View_area) {
 			img.id = "prev_" + View_area;
 			img.classList.add("obj");
 			img.file = file;
-			img.style.width = '140px'; 
-			img.style.height = '220px';
+			img.style.width = '260px'; 
+			img.style.height = '410px';
 			preview.appendChild(img);
 			if (window.FileReader) {
 				var reader = new FileReader();

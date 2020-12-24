@@ -10,24 +10,41 @@
         <title>나만의 크리스마스 폴꾸</title>
     </head>
     <body class="body">
+        <p class="banner">MY POLGGU</p>
         <div class="cardpage">
+            <div class="polarea">
+                <div id="savebox" class="savebox">
+                    <div class="box">
+                        <div id='View_area' class="back" ></div>
+                        <img id="img2" class="front" src="static/img/tmp/basic1.png" >
+                    </div>
+                    <br><div class="txt" id='result'></div>
+                    <canvas id="bar2"></canvas> 
+                </div>
+            </div>
+            <br>
             <div class="filebox">
-                <label for="profile_pt">업로드</label>
+                <label for="profile_pt">이미지 업로드</label>
                 <input type="file" name="profile_pt" id="profile_pt" onchange="previewImage(this,'View_area')">
             </div>
-            <div id="savebox" class="savebox">
-                <div class="box">
-                    <div id='View_area' class="back" ></div>
-                    <img id="img2" class="front" src="static/img/tmp/tmp1.png" >
-                </div>
-                <br><div class="txt" id='result'></div>
-                <canvas id="bar2"></canvas> 
+            <div class="btnarea">
+                <span class="type">스타일&nbsp&nbsp</span>
+                <button class="redbtn" onclick="toggleImg1()"></button>
+                <button class="greenbtn" onclick="toggleImg2()"></button>
+                <button class="yellowbtn" onclick="toggleImg2()"></button>
+                <button class="blackbtn" onclick="toggleImg2()"></button>
+                <br><br>
+                <span class="type">스티커&nbsp&nbsp</span>
+                <button class="onbtn" onclick="toggleImg1()">ON</button>
+                <button class="offbtn" onclick="toggleImg1()">OFF</button>
+                <br>
+                <br><input class="txtinput" value="텍스트를 입력하세요" id='name' onclick="this.value='';" onkeyup='printName()'/>    
             </div>
+            <br>
             <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#savebox'));">이미지로 저장</a></div>
-            
-            <br><button onclick="toggleImg1()">템플릿A</button>
-            <button onclick="toggleImg2()">템플릿b</button>
-            <br><input id='name' onkeyup='printName()'/>
+
+            <div class="linkcopy">링크 복사</div>
+            <br><br><br>
         </div>
     </div>
 
