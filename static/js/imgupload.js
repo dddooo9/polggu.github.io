@@ -40,8 +40,8 @@ function previewImage(targetObj, View_area) {
 			img.id = "prev_" + View_area;
 			img.classList.add("obj");
 			img.file = file;
-			img.style.width = '300px'; 
-			img.style.height = '300px';
+			img.style.width = '280px'; 
+			img.style.height = '400px';
 			preview.appendChild(img);
 			if (window.FileReader) {
 				var reader = new FileReader();
@@ -86,10 +86,8 @@ function printName()  {
   }
 
   function toggleImg1() {
-	document.getElementById("img1").src = "../static/img/sample1.jpg";
-	document.getElementById("img2").src = "../static/img/sample1.jpg";
+	document.getElementById("img2").src = "../static/img/tmp/tmp1.png";
   }
   function toggleImg2() {
-	document.getElementById("img1").src = "../static/img/sample2.jpg";
 	document.getElementById("img2").src = "../static/img/sample2.jpg";
   }

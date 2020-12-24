@@ -11,7 +11,8 @@
     </head>
     <body class="body">
         <div class="cardpage">
-            <img id="img1" src="static/img/sample1.jpg" style="width: 100px; height: 100px;">
+            <img src="static/img/tmp/tmp1.png" style="width: 140px; height: 220px;">
+            <img src="static/img/sample2.jpg" style="width: 100px; height: 100px;">
             <button onclick="toggleImg1()">toggle</button>
             <button onclick="toggleImg2()">toggle</button>
             
@@ -19,16 +20,13 @@
                 <input id='name' onkeyup='printName()'/>
                 <input type="file" name="profile_pt" id="profile_pt" onchange="previewImage(this,'View_area')">
                 <div id="bar_chart2" >
-                    <div class="card-header justify-content-center">
-                        <h2 class="text-center">현재 이미지</h2>
-                        <div id='result'></div>
-                        <img id="img2" src="static/img/sample1.jpg" style="width: 100px; height: 100px;">
-                        <div id='View_area' style='position:relative; width: 100px; height: 100px; color: black; border: 0px solid black; dispaly: inline; '></div>
-                    </div>
-                    <div class="card-body" style="height: 300px;">
+                        <div class="box">
+                            <div id='View_area' class="back" ></div>
+                            <img id="img2" class="front" src="static/img/tmp/tmp1.png" >
+                        </div>
+                        <br><div class="txt" id='result'></div>
                         <canvas id="bar2"></canvas>
-                        <div id='customLegend_humi' class='customLegend'></div>
-                    </div>
+                        
                 </div>
             </div>
             <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#bar_chart2'));">이미지로 저장</a></div>

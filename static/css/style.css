@@ -3,7 +3,7 @@
 }
 .main{
     text-align: center;
-    margin-top: 50%;
+    margin-top: 40%;
 }
 .title{
     color:white;
@@ -20,4 +20,27 @@
     margin-top: 10%;
     padding-left: 50px;
     padding-right: 50px;
+}
+.box{
+    position: relative;
+}
+.front{
+    width: 280px;
+    height: 440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.back{
+    position: absolute;
+    width: 280px;
+    height: 440px;
+    color: black;
+    top: 50%;
+    left: 50%;
+}
+.txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
