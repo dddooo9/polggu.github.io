@@ -1,0 +1,23 @@
+.body{
+    background-color: rgb(151, 34, 34);
+}
+.main{
+    text-align: center;
+    margin-top: 50%;
+}
+.title{
+    color:white;
+    font-size: 40px;
+}
+.startbtn{
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.cardpage{
+    margin-top: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
