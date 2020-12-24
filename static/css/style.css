@@ -71,7 +71,7 @@ url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;
     border-radius: 10px;
 }
 .cardpage{
-    margin-top: 5%;
+    margin-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -107,7 +107,7 @@ url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;
     margin-left: auto;
     margin-right: auto;
     width: 260px;
-    height: 430px;
+    height: 410px;
 }
 .btnarea{
     padding-top: 16px;
@@ -235,11 +235,9 @@ a:visited { color: white; text-decoration: none;}
 a:hover { color: white; text-decoration: none;}
 
 .hover{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
+    font-family: 'BMJUA';
     font-size: 15px;
     color: white;
-    letter-spacing: -2px;
     line-height: 35px;
 }
 .copytxt{

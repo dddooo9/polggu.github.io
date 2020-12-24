@@ -11,6 +11,7 @@
     </head>
     <body class="body">
         <p class="banner">MY POLGGU</p>
+        <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#savebox'));">POLGGU 이미지 저장</a></div>
         <div class="cardpage">
             <div class="polarea">
                 <div id="savebox" class="savebox">
@@ -40,11 +41,8 @@
                 <br>
                 <br><input class="txtinput" value="텍스트를 입력하세요" id='name' onclick="this.value='';" onkeyup='printName()'/>    
             </div>
-            <br>
-            <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#savebox'));">이미지로 저장</a></div>
-
-        <a class="clipboardBtn" href="" onclick=""><p class="copytxt">링크 복사</p></a>
-        <input id="clip_target" type="text" value="" style="position:absolute;top:-9999em;"/>
+            <a class="clipboardBtn" href="" onclick=""><p class="copytxt">링크 복사</p></a>
+            <input id="clip_target" type="text" value="" style="position:absolute;top:-9999em;"/>
             <br><br>
         </div>
         <p class="dev">dev | 임도연 임수민</p>
