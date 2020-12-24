@@ -1,20 +1,52 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .body{
-    background-color: rgb(151, 34, 34);
+    background-color: rgb(38,38,38);
 }
 .main{
     text-align: center;
-    margin-top: 40%;
+    margin-top: 50px;
 }
 .title{
+    font-family: 'BMJUA';
     color:white;
     font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.mainbox{
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.mainimg{
+    width: 260px;
+    height: 410px;
+    position: absolute;
+    left: 23.5%;
+}
+
 .startbtn{
-    background-color: green;
-    color: white;
+    font-family: 'BMJUA';
+    background-color: white;
+    color: rgb(165,51,49);
     width: 200px;
     height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    position: absolute;
+    left: 29.5%;
+    top:340px;
 }
+
 
 .cardpage{
     margin-top: 10%;
@@ -25,22 +57,62 @@
     position: relative;
 }
 .front{
-    width: 280px;
-    height: 440px;
+    width: 140px;
+    height: 220px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .back{
     position: absolute;
-    width: 280px;
-    height: 440px;
+    width: 140px;
+    height: 220px;
     color: black;
-    top: 50%;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .txt{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.savebox{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 210px;
+}
+.filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #5cb85c;
+    cursor: pointer;
+    border: 1px solid #4cae4c;
+    border-radius: .25em;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+  
+.filebox label:hover {
+    background-color: #6ed36e;
+}
+  
+.filebox label:active {
+    background-color: #367c36;
+}
+  
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }

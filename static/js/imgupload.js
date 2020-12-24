@@ -40,8 +40,8 @@ function previewImage(targetObj, View_area) {
 			img.id = "prev_" + View_area;
 			img.classList.add("obj");
 			img.file = file;
-			img.style.width = '280px'; 
-			img.style.height = '400px';
+			img.style.width = '140px'; 
+			img.style.height = '220px';
 			preview.appendChild(img);
 			if (window.FileReader) {
 				var reader = new FileReader();
@@ -83,11 +83,11 @@ function downloadURI(uri, name){
 function printName()  {
 	const name = document.getElementById('name').value;
 	document.getElementById("result").innerText = name;
-  }
+}
 
-  function toggleImg1() {
+function toggleImg1() {
 	document.getElementById("img2").src = "../static/img/tmp/tmp1.png";
-  }
-  function toggleImg2() {
+}
+function toggleImg2() {
 	document.getElementById("img2").src = "../static/img/sample2.jpg";
-  }
+}

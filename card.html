@@ -11,25 +11,23 @@
     </head>
     <body class="body">
         <div class="cardpage">
-            <img src="static/img/tmp/tmp1.png" style="width: 140px; height: 220px;">
-            <img src="static/img/sample2.jpg" style="width: 100px; height: 100px;">
-            <button onclick="toggleImg1()">toggle</button>
-            <button onclick="toggleImg2()">toggle</button>
-            
-            <div class="card card-default pb-5">
-                <input id='name' onkeyup='printName()'/>
+            <div class="filebox">
+                <label for="profile_pt">업로드</label>
                 <input type="file" name="profile_pt" id="profile_pt" onchange="previewImage(this,'View_area')">
-                <div id="bar_chart2" >
-                        <div class="box">
-                            <div id='View_area' class="back" ></div>
-                            <img id="img2" class="front" src="static/img/tmp/tmp1.png" >
-                        </div>
-                        <br><div class="txt" id='result'></div>
-                        <canvas id="bar2"></canvas>
-                        
-                </div>
             </div>
-            <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#bar_chart2'));">이미지로 저장</a></div>
+            <div id="savebox" class="savebox">
+                <div class="box">
+                    <div id='View_area' class="back" ></div>
+                    <img id="img2" class="front" src="static/img/tmp/tmp1.png" >
+                </div>
+                <br><div class="txt" id='result'></div>
+                <canvas id="bar2"></canvas> 
+            </div>
+            <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#savebox'));">이미지로 저장</a></div>
+            
+            <br><button onclick="toggleImg1()">템플릿A</button>
+            <button onclick="toggleImg2()">템플릿b</button>
+            <br><input id='name' onkeyup='printName()'/>
         </div>
     </div>
 
