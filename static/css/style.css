@@ -220,25 +220,27 @@ url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;
     border: none;
     text-align: center;
 }
-.savediv{
-    text-align: center;
-}
 .save_btn{
     background-color: rgb(165,51,49);
+    text-align: center;
     width: 250px;
     height: 35px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 6px;
-    font-family: 'BMJUA';
-    font-size: 15px;
-    color: white;
-    line-height: 35px;
-    border: none;
 }
 
 a:link { color: white; text-decoration: none;}
 a:visited { color: white; text-decoration: none;}
 a:hover { color: white; text-decoration: none;}
 
+.hover{
+    font-family: 'BMJUA';
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0px;
+    line-height: 35px;
+}
 .copytxt{
     margin-top: 10px;
     background-color: rgb(165,51,49);
