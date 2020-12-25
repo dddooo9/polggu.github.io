@@ -12,3 +12,11 @@
 - 사이트 링크 복사 기능
 
 
+<img src="https://github.com/polggu/polggu.github.io/blob/master/1.png">
+<img src="https://github.com/polggu/polggu.github.io/blob/master/2.png">
+
+----
+개선할 사항
+
+- 특정 브라우저만 이미지 저장이 되는 점
+- 버튼 클릭 css 효과 (버튼 눌림 )
