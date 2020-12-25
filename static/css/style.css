@@ -14,6 +14,9 @@ url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;
     text-align: center;
     margin-top: 50px;
 }
+.container{
+    margin-top: 350px;
+}
 .title{
     font-family: 'BMJUA';
     color:white;
